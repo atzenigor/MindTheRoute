@@ -1,0 +1,102 @@
+body {
+	margin:0;
+	padding:0;
+	border:0;			/* This removes the border around the viewport in old versions of IE */
+	width:100%;
+	min-width:600px;    	/* Minimum width of layout - remove line if not required */
+					/* The min-width property does not work in old versions of Internet Explorer */
+	font-size:90%;
+	font-family: 'Verdana', 'Geneva', 'sans-serif';
+	
+}
+
+p {
+	margin:.4em 0 .8em 0;
+	padding:0;
+}
+#question {
+	font-size: 20px;
+}
+
+#example {
+	font-style: oblique;
+	opacity: 0.4;
+}
+
+/* Header styles */
+#header {
+	clear:both;
+	float:left;
+	width:100%;
+	background-image: url(../img/prato2.png);
+}
+#header {
+	border-bottom:1px solid #000;
+}
+#header h1 {
+	padding:.4em 15px 0 15px;
+	margin:0;
+}
+
+/* column container */
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+}
+/* common column settings */
+.colleft {
+	float:left;
+	width:100%;
+	position:relative;
+}
+.col1,
+.col2 {
+	height: 560px;
+	float:left;
+	position:relative;
+}
+/* 2 Column (left menu) settings */
+.leftmenu {
+	background:#fff;		/* left column background colour */
+	
+	background-image: url(../img/tandem2.jpg);
+	background-repeat: no-repeat;
+	background-position: 3% 110%;
+}
+.leftmenu .colleft {
+	right:70%;			/* right column width */	
+}
+.leftmenu .col1 {
+	overflow:hidden;
+	width:68%;
+	left:100%;			/* 100% plus left column left padding */
+}
+#map {
+	height:100%;
+}
+#invert {
+	padding:0,0;
+	position:absolute;
+	margin-left:60%;
+	cursor:pointer;
+}
+.leftmenu .col2 {
+	overflow:auto;
+	width:27%;			/* left column content width (column width minus left and right padding) */
+	left:4%;			/* (right column left and right padding) plus (left column left padding) */
+}
+/* Footer styles */
+#footer {
+	clear:both;
+	float:left;
+	width:100%;
+	border-top:1px solid #000;
+}
+#footer p {
+	font-size: 12px;
+	padding:5px;
+	margin:0;
+}

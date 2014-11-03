@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>Mind the route!</title>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"></meta>
+	<script src="js/OpenLayers.js"></script>
+	<!-- <script src="http://code.jquery.com/jquery-1.5.js"></script> -->
+	<script src="http://code.jquery.com/jquery-git.js"></script>
+	<script defer="defer" type="text/javascript" src="js/openmap.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/screen.css" media="screen"></link>
+</head>
+<body>
+
+<div id="header">
+	<h1>Mind the route!</h1>
+</div>
+<div class="colmask leftmenu">
+	<div class="colleft">
+		<div class="col1">
+			<!-- Column 1 start -->
+			<div id="map" align="center"></div>
+			<!-- Column 1 end -->
+		</div>
+		<div class="col2">
+			<!-- Column 2 start -->
+			<br>
+			<div id="question">Where do you want to go?</div>
+			<div id="example">Example: street[, number]</div>
+			<br>
+			<div id="out"></div>
+			<div id="invert"><img src="img/arrows.jpg" style="height:10%; width:auto;"></div>
+			<form action="" method="get">
+				<table id="search_box">
+					<tr>
+						<td>From:</td>
+						<td><input id="from" type="text"></input></td>
+					</tr>
+					<tr>
+						<td>To:</td>
+						<td><input id="to" type="text"></input></td>
+					</tr>
+				</table>
+			</form>
+			<br>
+			<form>
+			<div>Kind of path:</div>
+				<input type="radio" name="mode" value="shortest" checked="checked">Shortest<br>
+				<input type="radio" name="mode" value="less_effort">Less effort<br>
+			</form>
+			<input id="button_search" type="submit" value="Search"></input>
+			<br>
+			<br>
+			<div id="result"></div>
+			<br>
+			<!-- Column 2 end -->
+		</div>
+	</div>
+</div>
+<div id="footer">
+    <table width="100%">
+        <tr>
+            <td align="left"><p>Powered by Igor Atzeni and Francesca Delfino</p></td>
+            <td align="right"><p>Nominatim Search Courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png"></p></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
